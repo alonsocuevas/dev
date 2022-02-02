@@ -278,7 +278,7 @@ section .title::after{
 .services .title::after,
 .works .title::after{
     background: #111; /* color de fonde de cuadro de subtitulo de servicios y mi trabajo*/
-    content: "Lo que proporciono";
+    content: "yo proveo";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -487,7 +487,7 @@ section .title::after{
 
 /* estilos de la seccion contactame */
 .contact .title::after{
-    content: "Ponerce en contacto";
+    content: "Escribeme";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
