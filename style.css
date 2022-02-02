@@ -463,7 +463,7 @@ section .title::after{
 .works .card .box a{
     display: inline-block;
     background: crimson;
-    color: deepskyblue; 
+    color: white; 
     font-size: 20px;
     padding: 8px 28px;
     margin-top: 17px;
