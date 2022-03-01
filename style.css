@@ -9,7 +9,7 @@
     
 }
 body{
-    background-color: #222;/* fondo de la pagina*/
+    background-color:#222;/* fondo de la pagina*/
 }
 h2{
     color: white;
@@ -222,7 +222,7 @@ section .title::after{
 
 /* estilo de la seccion sobre mi*/
 .about .title::after{
-    content: "Quién soy";
+    content: "";
 }
 .about .about-content .left{
     width: 45%;
@@ -268,18 +268,18 @@ section .title::after{
 
 /*estilo de la seccion mis servicios */
 .services, .works{
+    background: url("images/PHP-1.jpg") no-repeat center;
     color:#fff;
-    background: #111; /*color de fondo de mis servicios y mi trabajo*/
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    /*background: #111; /*color de fondo de mis servicios y mi trabajo*/
 }
 .services .title::before,
 .works .title::before{
     background: #fff;
 }
-.services .title::after,
-.works .title::after{
-    background: #111; /* color de fonde de cuadro de subtitulo de servicios y mi trabajo*/
-    content: "yo proveo";
-}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
     background: #222;/* color de fondo de los cuadritos de mis servicios*/
@@ -314,9 +314,7 @@ section .title::after{
 
 /* estilos de la seccion mis habilidades */
 
-.skills .title::after{
-    content: "Lo que yo se";
-}
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -397,9 +395,7 @@ section .title::after{
 }
 
 /* estilos de la seccion mi equipo */
-.works .title::after{
-    content: "lo que he hecho";
-}
+
 .works .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -427,8 +423,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .works .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 200px; /*alto del circulo donde va la imagen*/
+    width: 200px; /*ancho del circulo donde va la imagen*/
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
