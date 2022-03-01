@@ -244,7 +244,6 @@ section .title::before{
 .services, .works{
     color:#fff;
     background: url("images/bd2.jpg") no-repeat center;
-    color:#fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
