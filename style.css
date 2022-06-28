@@ -94,8 +94,8 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: #00ced1; /* color de la barra de menu*/
+    padding: 4px 0;
+    background: #222; /* color de la barra de menu*/
 }
 .navbar .max-width{
     display: flex;
@@ -532,12 +532,12 @@ section .title::after{
 .right form .button-area button{
     color: #fff;
     display: block;
-    width: 280px!important;
-    height: 100px;
+    width: 150px!important;
+    height: 150px;
     outline: none;
     font-size: 25px;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 100px;
     cursor: pointer;
     flex-wrap: nowrap;
     background: deepskyblue;
@@ -551,12 +551,12 @@ section .title::after{
 /* estilos de la seccion pie de pagina */
 footer{
     background: #111;/* color de la franja de todos los derechos reservados*/
-    padding: 15px 23px;
+    padding: 3px 23px;
     color: #fff;
     text-align: center;
 }
 footer span a{
-    color: crimson;
+    color: #fff;
     text-decoration: none;
     
 }
