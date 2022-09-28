@@ -172,7 +172,7 @@ section .title::after{
 /* estilo de la seccion de inicio */
 .home{
     display: flex;
-    background: url("images/PHP-1.jpg") no-repeat center;
+    background: url("images/dev.jpg") no-repeat center;
     height: 100vh;
     color: #fff; /* color de: HOLA NI NOMBRE ES ALONSO C PIZARRO YO SOY*/
     min-height: 500px;
@@ -268,7 +268,7 @@ section .title::after{
 
 /*estilo de la seccion mis servicios */
 .services, .works{
-    background: url("images/PHP-1.jpg") no-repeat center;
+    background: url("images/dev.jpg") no-repeat center;
     color:#fff;
     min-height: 500px;
     background-size: cover;
@@ -399,8 +399,8 @@ section .title::after{
 .works .carousel .card{
     background: #222;
     border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
+    padding: 15px 35px;
+    text-align:center;
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -420,7 +420,7 @@ section .title::after{
 .works .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
-    margin: 10px 0 7px 0;
+    margin: 25px 0 7px 0;
 }
 .works .carousel .card img{
     height: 200px; /*alto del circulo donde va la imagen*/
@@ -440,7 +440,7 @@ section .title::after{
 }
 .owl-dot{
     height: 13px;
-    width: 13px;
+    width: 10px;
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
@@ -448,7 +448,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .owl-dot.active{
-    width: 35px;
+    width: 30px;
     border-radius: 14px;
 }
 .owl-dot.active,
@@ -457,11 +457,12 @@ section .title::after{
 }
 
 .works .card .box a{
+    /*text-align: center;*/
     display: inline-block;
     background: crimson;
     color: white; 
     font-size: 20px;
-    padding: 8px 28px;
+    padding: 8px 20px;
     margin-top: 17px;
     font-weight: 400;
     border-radius: 6px;
