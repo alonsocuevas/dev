@@ -9,7 +9,7 @@
     
 }
 body{
-    background-color:#222;/* fondo de la pagina*/
+    background-color:#1f242d;/* fondo de la pagina*/
 }
 h2{
     color: white;
@@ -23,14 +23,14 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #888;
+    background:#1f242d;
 }
 ::-webkit-scrollbar-thumb {
-    background: crimson;
+    background: deepskyblue;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: crimson;
+    background: deepskyblue;
 }
 
 /* todos los codigos de estilo de contenido similar */
@@ -80,7 +80,7 @@ section .title::after{
     font-size: 20px;
     color: green;/* color de texto debajo del titulo*/
     padding: 0 5px;
-    background: #222; /* color del cuadrito de los subtitulo*/
+    background: #1f242d; /* color del cuadrito de los subtitulo*/
     transform: translateX(-50%);
 }
 
@@ -95,7 +95,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 4px 0;
-    background: #222; /* color de la barra de menu*/
+    background: #1f242d; /* color de la barra de menu*/
 }
 .navbar .max-width{
     display: flex;
@@ -125,17 +125,20 @@ section .title::after{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    border-radius: 50px;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #0ef;
+    
 }
 .navbar.sticky .menu li a:hover{
-    color:crimson;
+    color:#0ef;
+
 }
 
 /* stilo del boton de menu */
 .menu-btn{
-    color: crimson; /* color del boton de menu*/
+    color: #0ef; /* color del boton de menu*/
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -144,7 +147,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #0ef;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -200,24 +203,26 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #0ef;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: #0ef;
     color: #fff; /* color del boton contactame al inicio*/
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    border-radius: 50px;
+    border: 2px solid #0ef;
     transition: all 0.3s ease;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 .home .home-content a:hover{
-    color: crimson;
+    color: #0ef;
     background: none;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 
 /* estilo de la seccion sobre mi*/
@@ -228,11 +233,30 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 470px;
+    width: 470px;
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* esto hace que la imagen flote */
+.about-content img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* fin de la flotavilidad */
 .about .about-content .right{
     width: 55%;
 }
@@ -243,7 +267,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #0ef;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -251,19 +275,21 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: #0ef;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    border-radius: 50px;
+    border: 2px solid #0ef;
     transition: all 0.3s ease;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #0ef;
     background: none;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 
 /*estilo de la seccion mis servicios */
@@ -282,15 +308,16 @@ section .title::after{
 
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;/* color de fondo de los cuadritos de mis servicios*/
+    background: #1f242d;/* color de fondo de los cuadritos de mis servicios*/
     text-align: center;
-    border-radius: 6px;
+    border-radius: 50px; /* redondes de las esquinas de los cuadros*/
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: #0ef;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -300,11 +327,11 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #0ef;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: #fff;
+    color: deepskyblue;
 }
 .services .serv-content .card .text{
     font-size: 25px;
@@ -320,28 +347,28 @@ section .title::after{
 }
 .skills .skills-content .left .text{
     font-size: 20px;
-    color: crimson;/* color se subtitulo*/
+    color: deepskyblue;/* color se subtitulo*/
     font-weight: 600;
     margin-bottom: 10px;
 }
 .skills .skills-content .left p{
     text-align: justify;
-    color: white; /* color de texto de relleno*/
+    color: #0ef; /* color de texto de relleno*/
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: #0ef;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #0ef;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: #0ef;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -356,7 +383,7 @@ section .title::after{
 .skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
-    color: deepskyblue;/* color de lenguajes y porcentaje*/
+    color: #0ef;/* color de lenguajes y porcentaje*/
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -370,7 +397,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: deepskyblue;
 }
 .skills-content .right .html::before{
     width: 60%;
@@ -391,21 +418,22 @@ section .title::after{
     width: 40%;
 }
 .skills-content .right .csharp::before{
-    width: 50%;
+    width: 60%;
 }
 
 /* estilos de la seccion mi equipo */
 
 .works .carousel .card{
-    background: #222;
-    border-radius: 6px;
+    background: #1f242d;
+    border-radius: 50px;
     padding: 15px 35px;
     text-align:center;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 .works .carousel .card:hover{
-    background: crimson;
+    background: deepskyblue;
+    box-shadow: 0 0 1rem deepskyblue;
 }
 .works .carousel .card .box{
     display: flex;
@@ -427,7 +455,7 @@ section .title::after{
     width: 200px; /*ancho del circulo donde va la imagen*/
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid deepskyblue;
     transition: all 0.3s ease;
 }
 .works .carousel .card:hover img{
@@ -444,7 +472,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid #0ef!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -453,20 +481,20 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: #0ef!important;
 }
 
 .works .card .box a{
     /*text-align: center;*/
     display: inline-block;
-    background: crimson;
+    background: #0ef;
     color: white; 
     font-size: 20px;
     padding: 8px 20px;
     margin-top: 17px;
     font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
+    border-radius: 50px;
+    border: 2px solid #0ef;
     transition: all 0.3s ease;
 }
 .works .card .box a:hover{
@@ -477,26 +505,24 @@ section .title::after{
     padding: 8px 28px;
     margin-top: 17px;
     font-weight: 400;
-    border-radius: 6px;
+    border-radius: 50px;
     border: 2px solid deepskyblue;
     transition: all 0.3s ease;
 }
 
 /* estilos de la seccion contactame */
 .contact .title::after{
-    content: "Escribeme";
+    content: "";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
-    
-
 }
 
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: crimson; /*color del texto PONERCE EN CONTACTO*/
+    color: #0ef; /*color del texto PONERCE EN CONTACTO*/
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -517,14 +543,14 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #0ef;
 }
 .contact .contact-content .info .head{
     font-weight: 500;
     color: white;/*color de name - address - email en contacto*/
 }
 .contact .contact-content .info .sub-title{
-    color: deepskyblue; /*color de letras en mi info en contacto*/
+    color: #0ef; /*color de letras en mi info en contacto*/
 }
 .contact .right form .button-area{
     display: flex;
@@ -546,12 +572,12 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-    color: crimson;
+    color: #0ef;
     background: #1e90ff
 }
 /* estilos de la seccion pie de pagina */
 footer{
-    background: #111;/* color de la franja de todos los derechos reservados*/
+    background: #1f242d;/* color de la franja de todos los derechos reservados*/
     padding: 3px 23px;
     color: #fff;
     text-align: center;
@@ -691,4 +717,30 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+
+
+.bxl-gmail {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background: transparent;
+    border: .4rem solid #0ef;
+    border-radius: 50%;
+    font-size: 10rem;
+    color: #0ef;
+    margin: 6rem 2.5rem 6rem 0;
+    transition: .5s ease;
+}
+
+.bxl-gmail:hover{
+    background: #0ef;
+    color: deepskyblue;
+    box-shadow: 0 0 1rem deepskyblue;
+}
+
+span{
+    color: #0ef;
 }

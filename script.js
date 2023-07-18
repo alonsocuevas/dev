@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Desarrollador Web ", "Back End / Front End"],
+        strings: ["Desarrollador de Software"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Desarrollador Web ", " Back End / Front End"],
+        strings: ["Desarrollador Back End"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -75,3 +75,7 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
