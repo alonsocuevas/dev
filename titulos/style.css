@@ -214,7 +214,7 @@ section .title::after {
 /* estilo de la seccion de inicio */
 .home {
     display: flex;
-    background: url("/images/dev.jpg") no-repeat center;
+    background: url("images/dev.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     /* color de: HOLA NI NOMBRE ES ALONSO C PIZARRO YO SOY*/
