@@ -428,6 +428,13 @@ section .title::after {
     margin-bottom: 10px;
 }
 
+.skills .skills-content .right .text {
+    font-size: 17px;
+    color: deepskyblue;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .skills .skills-content .left p {
     text-align: justify;
     color: #0ef;
@@ -453,7 +460,7 @@ section .title::after {
 }
 
 .skills .skills-content .right .bars {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .skills .skills-content .right .info {
@@ -918,6 +925,6 @@ span {
 }
 
 .bars {
-    font-size: 60px;
+    font-size: 40px;
 
 }
