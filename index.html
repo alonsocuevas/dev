@@ -12,7 +12,6 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <!--estos tres fueron agregados para el area mis trabajos -->
@@ -21,9 +20,11 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
 </head>
@@ -34,15 +35,13 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <!--  <div class="logo"><a href="#"><span><i class="fas fa-cogs"></i></span></a></div>la palabra en la barra-->
-            <div class="logo"><a href="#"><span><i class=""></i> <i class=""></i> </span></a></div>
-            <!--la palabra en la barra-->
+            <div class="logo"><a href="#"><span></span></a></div>
             <ul class="menu"><!-- las opciones del menu -->
                 <li><a href="#home" class="menu-btn">Inicio</a></li>
                 <li><a href="#about" class="menu-btn">sobre</a></li>
-                <li><a href="#services" class="menu-btn">Planes</a></li>
-                <li><a href="#skills" class="menu-btn">Herramientas</a></li>
-                <li><a href="#works" class="menu-btn">Trabajos</a></li>
+                <li><a href="#services" class="menu-btn">Experiencia</a></li>
+                <li><a href="#skills" class="menu-btn">Tecnologias</a></li>
+                <li><a href="#works" class="menu-btn">Proyectos</a></li>
                 <li><a href="#contact" class="menu-btn">Contacto</a></li>
             </ul>
             <div class="menu-btn">
@@ -57,7 +56,6 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
-                <!-- <div class="text-1">Soy</div> -->
                 <div class="text-2">Alonso Cuevas Pizarro</div>
                 <div class="text-3"> <span class="typing"></span></div>
                 <a href="#contact">Contactame</a>
@@ -78,28 +76,11 @@
                 <div class="column right">
                     <div class="text"><span class="typing-2"></span></div>
                     <p>
-                        Estoy entusiasmado por embarcarme en una carrera profesional gratificante donde pueda seguir aprendiendo y creciendo como profesional.
-                        A lo largo de mi formación académica, he adquirido habilidades en el desarrollo de software, así como la
-                        resolución de problemas complejos.
-                    </p>
-                    <br>
-                    <p>
-                        Estoy comprometido con el <span>aprendizaje continuo</span> y busco constantemente oportunidades 
-                        de crecimiento que me permitan contribuir al éxito de los proyectos.
-                    </p>
-                    <br>
-                    <p>
-                        Tengo experiencia en la creación de aplicaciones <span>web</span>, 
-                        siguiendo buenas prácticas de desarrollo.
-                    </p>
-                    <br>
-                    <p>
-                        Mi objetivo es <span>aplicar mis conocimientos</span> y habilidades para enfrentar nuevos
-                        desafíos y contribuir al <span>desarrollo de soluciones</span> tecnológicas.
+                        Soy desarrollador de software web. Tengo experiencia en la creación de aplicaciones web aplicando buenas prácticas de desarrollo. Me motiva el aprendizaje continuo y busco aportar soluciones tecnológicas que resuelvan problemas reales y contribuyan al éxito de los proyectos.
                     </p>
 
                     <a href="adjunto/CV.Alonso.pdf">Descargar CV</a>
-                    <a href="titulos/index.html">Ver Certificados</a>
+                    <a href="titulos/index.html">Mis Titulos</a>
                 </div>
             </div>
         </div>
@@ -107,37 +88,55 @@
 
     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+    <!-- about section start -->
+    
+
+    
+
+    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
     <!-- services section start -->
     <section class="services" id="services">
         <div class="max-width">
-            <!-- <h2 class="title">Mis servicios</h2> -->
+            <div class="text"><span class="typing-3"></span></div><br>
             <div class="serv-content">
+                
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-laptop-code"></i>
-                        <!--<i class="fa fa-html5"></i>-->
-                        <i class="fas fa-ellipsis-h"></i>
-                        <i class="fa fa-database"></i>
-                        <!--<i class="fab fa-css3-alt"></i>-->
-
-                        <div class="text">Proyecto</div>
-                        <p>Desarrolló un sistema SaaS para el registro de empleados con escaneo dinámico de QR por seguridad.<br> 
-                            ● Tecnologías a utilizar: <span>TypeScript, Next.js, Tailwind CSS, JWT, bcrypt.js, qrcode, nodemailer, PostgreSQL, Prisma ORM, Git, Oracle Cloud, AWS.</span><br>
-                            ● Está orientado a empresas, instituciones u organizaciones de todos los tamaños que necesiten optimizar el control de asistencia. </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <i class="fas fa-ellipsis-h"></i>
-                        <i class="fas fa-laptop-code"></i>
-
-                        <div class="text">Actualización</div>
                         <p>
-                            Actualmente me encuentro en un proceso activo de formación y actualización profesional. Estoy explorando y aplicando nuevas tecnologías para <span>fortalecer mi perfil como desarrollador, adquirir competencias técnicas actualizadas y ampliar mi visión estratégica del sector.</span> Busco aumentar mi competitividad y aportar soluciones innovadoras.
+                            <strong>FAENA TECH <br>Desarrollador Web Full Stack</strong><br>
+                            (Nov 2024 – Feb 2025)<br> <br>
+                            • Desarrollé funcionalidades clave para Tiquetera de incidencias (minería y construcción).<br>
+                            • Mejoré la usabilidad móvil en un 80% de los elementos requeridos.<br>
+                            • Coordiné roadmap y realicé adaptaciones lingüísticas para Chile, México y Argentina.
                         </p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="box">
+                        <p>
+                            <strong>QUALITAT <br>Desarrollador Web Full Stack</strong><br>
+                            (Dic 2020 – Ene 2021)<br> <br>
+                            • Participé en el desarrollo de un sistema de cotizaciones en entornos de realidad virtual.<br>
+                            • Optimicé flujos de trabajo, aumentando eficiencia en un 20%.<br>
+                            • Elaboré informes de progreso y documentación técnica.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <p>
+                            <strong>PROYECTO <br> Sistema de gestión de empleados con QR</strong><br> <br>
+                            • Control de asistencia mediante escaneo QR.<br>
+                            • Generación dinámica de códigos y autenticación con JWT.<br>
+                            • Pensado para organizaciones que necesiten registro rápido y seguro.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                
             </div>
         </div>
         </div>
@@ -148,45 +147,62 @@
     <!-- skills section start -->
     <section class="skills" id="skills">
         <div class="max-width">
-            <!-- <h2 class="title">Mis Habilidades</h2> -->
+            <div class="text"><span class="typing-4"></span></div><br>
             <div class="skills-content">
-                <div class="column left">
-                    <div class="text">"Experiencia"</div>
-                    <p>Mi formación en el Instituto Profesional Virginio Gómez, dependiente de la Universidad de Concepción, junto con mi participación en proyectos personales y profesionales, ha fortalecido mis competencias en el desarrollo de software.</p>
-                    <br>
-                    <p>A lo largo de mi trayectoria, he trabajado con diversos entornos y tecnologías, aplicándolos en múltiples proyectos reales. Esta diversidad me ha permitido desarrollar una visión más integral del desarrollo, mejorar mi capacidad técnica y mantener una actitud de aprendizaje continuo.</p>
-                        <br>
-                        <p>Actualmente, busco seguir ampliando mis habilidades y asumir nuevos desafíos que me permitan crecer profesionalmente, aportar valor y contribuir a la innovación.</p>
-                        <!--<a href="#">Leeme mas</a>-->
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="text">Lenguajes</div>
-                        <i class="devicon-python-plain colored"></i>
-                        <i class="devicon-javascript-plain colored"></i>
-                        <i class="devicon-html5-plain colored"></i>
-                        <i class="devicon-css3-plain colored"></i>
-                    </div>
-                    <div class="bars">
-                        <div class="text">Frameworks / Librerías</div>
-                        <i class="devicon-react-original colored"></i>
-                        <i class="devicon-nodejs-plain-wordmark colored"></i>
-                    </div>
-                    <div class="bars">
-                        <div class="text">Base de Datos</div>
-                        <i class="devicon-azuresqldatabase-plain colored"></i>
-                        <i class="devicon-postgresql-plain colored"></i>
-                    </div>
-                    <div class="bars">
-                        <div class="text">DevOps / Herramientas</div>
-                        <i class="devicon-amazonwebservices-plain colored"></i>
-                        <i class="devicon-linux-plain colored"></i>
-                        <i class="devicon-github-original"></i>
-                        <i class="devicon-docker-plain colored"></i>
-                    </div>
-                </div>
+    <!------------------------------------------------------------>
+                    <div class="card">
+    <div class="box">
+        <div class="text">Lenguajes</div>
+        <br>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+            <li><i class="devicon-python-plain colored"></i> Python</li>
+            <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+            <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+        </ul>
+    </div>
+</div>
+<!------------------------------------------------------------>
+<div class="card">
+    <div class="box">
+        <div class="text">Framework / Librerias</div>
+        <br>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li><i class="devicon-react-original colored"></i>React</li>
+            <li><i class="devicon-nodejs-plain-wordmark colored"></i>Node.js</li>
+            <li><i class="devicon-tailwindcss-plain colored"></i>TailwindCSS</li>
+        </ul>
+    </div>
+</div>
+<!------------------------------------------------------------>
+<div class="card">
+    <div class="box">
+        <div class="text">Bases de Datos</div>
+        <br>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li><i class="devicon-azuresqldatabase-plain colored"></i> SQL</li>
+            <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
+            <li><i class="devicon-prisma-plain colored"></i>Prisma ORM</li>
+        </ul>
+    </div>
+</div>
+<!------------------------------------------------------------>
+<div class="card">
+    <div class="box">
+        <div class="text">DevOps / Herramientas</div>
+        <br>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li><i class="devicon-amazonwebservices-plain colored"></i>
+ Amazon Web Service</li>
+            <li><i class="devicon-linux-plain colored"></i> Linux Comand</li>
+            <li><i class="devicon-github-original"></i> GitHub</li>
+            <li><i class="devicon-docker-plain colored"></i> Docker</li>
+            <li><i class="devicon-postman-plain colored"></i> Postman</li>
+        </ul>
+    </div>
+</div>
+<!------------------------------------------------------------>
             </div>
-
         </div>
     </section>
 
@@ -195,129 +211,108 @@
      <!-- works section start -->
      <section class="works" id="works">
         <div class="max-width">
-            <!--  <h2 class="title">Mis Proyectos</h2>
-            <h2 class="title">Back End</h2> -->
-
+            <div class="text"><span class="typing-5"></span></div><br>
             <div class="carousel owl-carousel">
                 <div class="card">
+                    <a href="https://alonsocuevas.github.io/TicketAvion/appavion/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/avion.png" alt="">
                         <div class="text">Ticket de Avion</div>
-                        <!--<p>Se me a planteado crear un sistema que trabaje con los datos de un ticket de vuelo en particular</p>-->
                         <br>
-                        <a href="https://alonsocuevas.github.io/TicketAvion/">Ver</a>
+                        <!--<a href="https://alonsocuevas.github.io/TicketAvion/">Ver</a>-->
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="https://alonsocuevas.github.io/banco/appbanco/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/banco.jpg" alt="">
                         <div class="text">Banco</div>
-                        <!--<p>Se me a planteado la situacion en la que un banco solicita un sistema que almacene informacion de sus usuarios y cuentas </p>-->
                         <br>
-                        <a href="https://alonsocuevas.github.io/banco/">Ver</a>
-                        <!-- <a href="crud/index.html">Mirame</a> -->
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="https://alonsocuevas.github.io/temperatura/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/termo.png" alt="">
                         <div class="text">Termometro</div>
-                        <!--<p>Una app en windows form, conversor de temperatura de °F a ° C </p>-->
                         <br>
-                        <a href="https://alonsocuevas.github.io/temperatura/">Ver</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="https://alonsocuevas.github.io/Futbol/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/futbol.jpg" alt="">
                         <div class="text">Futbol</div>
-                        <!--<p>Una asociacion desea llevar un control de sus integrantes y equipos</p>-->
                         <br>
-                        <a href="https://alonsocuevas.github.io/Futbol/">Ver</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="adjunto/maestromella.pdf" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/microbus.jpg" alt="">
                         <div class="text">Auto Bus</div>
-                        <!--<p>Una linea de auto bus requiere mejorar su proceso de cobro de pasaje.</p>-->
                         <br>
-                        <a href="adjunto/maestromella.pdf">Ver más</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="adjunto/precipitacion.pdf" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/c-gato.png" alt="">
                         <div class="text">Precipitacion</div>
-                        <!--<p>App en windows Form, conversor de pulgadas a milimetros</p>-->
                         <br>
-                        <a href="adjunto/precipitacion.pdf">Ver más</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="adjunto/telefonia.pdf" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/telefono.jpg" alt="">
                         <div class="text">Telefonia</div>
-                        <!--<p>Una empresa de telefonia necesita tener control de los datos de sus usuarios.</p>-->
                         <br>
-                        <a href="adjunto/telefonia.pdf">Ver más</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="adjunto/estatura.pdf" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/c-gato.png" alt="">
                         <div class="text">Estatura</div>
-                        <!--<p>App que transorma de unidad inglesa a undad latina de medidas</p>-->
                         <br>
-                        <a href="adjunto/estatura.pdf">Ver más</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="adjunto/portafolio.pdf" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/alonso.jpg" alt="">
                         <div class="text">Mi portafolio</div>
-                        <!--<p>He creado esta pagina web con el proposito de</p>
-                        <p>darme a conocer y dar a conocer mi trabajo.</p>-->
                         <br>
-                        <a href="adjunto/portafolio.pdf" style="color:white">Ver más</a>
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="crud/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/bd.jpg" alt="">
                         <div class="text">C.R.U.D</div>
-                        <!--<p>Una pequeña base de datos orientada a los </p>
-                        <p>conceptos basicos del acronimo crud</p>-->
                         <br>
-                        <a href="crud/index.html">Ver más</a>
-                        <!-- <a href="crud/index.html">Mirame</a> -->
-
                     </div>
+                    </a>
                 </div>
                 <div class="card">
+                    <a href="https://alonsocuevas.github.io/dino/index.html" target="_blank" class="card-link">
                     <div class="box">
                         <img src="images/no-internet.jpg" alt="">
                         <div class="text">Dino Juego</div>
-                        <!--<p>El juego del dinosaurio pero ahora en tu mano.</p>
-                        <p>No es necesario estar sin internet para jugarlo</p>-->
                         <br>
-                        <a href="https://alonsocuevas.github.io/dino/">Jugar</a>
                     </div>
+                    </a>
                 </div>
-                <!-- <div class="card">
-                    <div class="box">
-                        <img src="images/profile-4.jpeg" alt="">
-                        <div class="text">Nombre de algo</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="images/profile-5.jpeg" alt="">
-                        <div class="text">Nombre de algo</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div> -->
                 
             </div>
         </div>
@@ -328,45 +323,72 @@
     <!-- contact seccion start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <!-- <h2 class="title">Contáctame</h2> -->
+            <div class="text"><span class="typing-6"></span></div><br>
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text">Escribeme</div>
-                    <p>Estoy encantado de conversar más a fondo sobre mi experiencia y cómo puedo contribuir al éxito en tus
-                        proyectos</p>
+                    <p>
+                        Estoy disponible para conversar contigo sobre mi experiencia y cómo puedo aportar a tus proyectos.
+                    </p>
                     <br>
-                    <p>¿Tienes preguntas, ideas o simplemente quieres charlar sobre posibilidades infinitas? <br>¡Estoy
-                        aquí
-                        para escucharte! Ponte en contacto conmigo hoy mismo y comencemos este emocionante viaje juntos.
-                        Estoy ansioso por conocerte y colaborar en proyectos innovadores y desafiantes.
+                    <p>
+                        ¿Tienes preguntas, ideas o simplemente quieres hablar sobre nuevas oportunidades? ¡Estoy aquí para escucharte! Escríbeme me gustaria conocerte y colaborar en proyectos innovadores y desafiantes.
                     </p>
                     <br>
                     <p>
                         Recuerda, cada gran logro comienza con un simple paso hacia adelante. ¡Vamos a dar ese paso
                         juntos!
                     </p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="sub-title">Alonso Cuevas Pizarro</div>
-                                <div class="sub-title">Concepción - Chile</div>
-                            </div>
+                    
+                    <div class="button-area">
+                                <!-- WhatsApp -->
+                            <a href="https://wa.me/56932207318" target="_blank"><i class='bx bxl-whatsapp'></i>
+
+                                <!-- GitHub -->
+<a href="https://github.com/alonsocuevas" target="_blank">
+  <i class='bx bxl-github'></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/alonso-cuevas-pizarro-b2066434a/" target="_blank">
+  <i class='bx bxl-linkedin'></i>
+</a>
+</a>
                         </div>
-                    </div>
                 </div>
                 <div class="column right">
                     <form action="#">
-                        <div class="button-area">
-                            <a href="mailto:alonsocuevaspizarro@gmail.com?Subject=Interesado%20en%20contactarte"><i
-                                    class='bx bxl-gmail'></i></a>
-                            <a href="https://wa.me/56932207318"><i class='bx bxl-whatsapp'></i></a>
-                        </div>
-                        <div class="button-area">
-
-                        </div>
+                        <form class="contact-form" action="mailto:alonsocuevaspizarro@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Tu email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="mensaje">Cuéntame sobre tu proyecto:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+      
+      <button type="button" class="btn" id="submit-btn">Enviar correo</button>
+      <div id="message" class="message"></div>
+    </form>
                     </form>
+                    <div class="icons">
+                        <div class="row">
+                            
+                            
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -375,11 +397,6 @@
 
     <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- footer section start -->
-    <!--  <footer>
-        <span>Creado y Editado -<a href=""> Alonso Cuevas Pizarro</a>
-            | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
-    </footer> -->
 
 
     <script src="script.js"></script>

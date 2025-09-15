@@ -1,4 +1,3 @@
-/*  importando fuentes de google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 * {
@@ -9,9 +8,13 @@
 
 }
 
+.typing-3, .typing-4, .typing-5, .typing-6 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 body {
     background-color: #1f242d;
-    /* fondo de la pagina*/
 }
 
 h2 {
@@ -22,7 +25,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* barra de desplazamiento personalizada */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -39,7 +41,6 @@ html {
     background: deepskyblue;
 }
 
-/* todos los codigos de estilo de contenido similar */
 section {
     padding: 100px 0;
 }
@@ -55,6 +56,7 @@ section {
 .skills,
 .works,
 .contact,
+.experience
 footer {
     font-family: 'Poppins', sans-serif;
 }
@@ -62,7 +64,8 @@ footer {
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
-.contact .contact-content {
+.contact .contact-content, 
+.experiencie .experience-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -104,7 +107,6 @@ section .title::after {
     transform: translateX(-50%);
 }
 
-/* estilo de la barra de navegacion */
 .navbar {
     position: fixed;
     width: 100%;
@@ -117,7 +119,6 @@ section .title::after {
 .navbar.sticky {
     padding: 4px 0;
     background: #1f242d;
-    /* color de la barra de menu*/
 }
 
 .navbar .max-width {
@@ -128,20 +129,17 @@ section .title::after {
 
 .navbar .logo a {
     color: #fff;
-    /* color de la palabra porta en la barra de menu*/
     font-size: 35px;
     font-weight: 600;
 }
 
 .navbar .logo a span {
     color: deepskyblue;
-    /* color de la palabra folio de la barra de menu */
     transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span {
     color: #fff;
-    /* color de la palabra folio de la barra de menu cuando bajas */
 }
 
 .navbar .menu li {
@@ -152,7 +150,6 @@ section .title::after {
 .navbar .menu li a {
     display: block;
     color: #fff;
-    /* color de las palabras en la barra de menu */
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -170,10 +167,8 @@ section .title::after {
 
 }
 
-/* stilo del boton de menu */
 .menu-btn {
     color: #0ef;
-    /* color del boton de menu*/
     font-size: 23px;
     cursor: pointer;
     display: none;
@@ -189,7 +184,6 @@ section .title::after {
     text-align: center;
     line-height: 45px;
     color: #fff;
-    /* color de la flecha que te lleva al inicio */
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -211,13 +205,11 @@ section .title::after {
 }
 
 
-/* estilo de la seccion de inicio */
 .home {
     display: flex;
-    background: url("images/dev.jpg") no-repeat center;
+    background: url("images/dev2.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
-    /* color de: HOLA NI NOMBRE ES ALONSO C PIZARRO YO SOY*/
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
@@ -227,14 +219,6 @@ section .title::after {
 .home .max-width {
     width: 100%;
     display: flex;
-}
-
-.home .max-width .row {
-    margin-right: 0;
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
 }
 
 .home .home-content .text-2 {
@@ -257,7 +241,6 @@ section .title::after {
     display: inline-block;
     background: #0ef;
     color: #fff;
-    /* color del boton contactame al inicio*/
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
@@ -265,16 +248,16 @@ section .title::after {
     border-radius: 50px;
     border: 2px solid #0ef;
     transition: all 0.3s ease;
-    box-shadow: 0 0 1rem deepskyblue;
+    
 }
 
 .home .home-content a:hover {
     color: #0ef;
     background: none;
     box-shadow: 0 0 1rem deepskyblue;
+    transform: scale(1.09);
 }
 
-/* estilo de la seccion sobre mi*/
 .about .title::after {
     content: "";
 }
@@ -290,7 +273,6 @@ section .title::after {
     border-radius: 6px;
 }
 
-/* esto hace que la imagen flote */
 .about-content img {
     width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
@@ -310,7 +292,6 @@ section .title::after {
     }
 }
 
-/* fin de la flotavilidad */
 .about .about-content .right {
     width: 55%;
 }
@@ -318,7 +299,6 @@ section .title::after {
 .about .about-content .right .text {
     font-size: 25px;
     color: white;
-    /* color de mi nombre */
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -334,33 +314,33 @@ section .title::after {
 
 .about .about-content .right a {
     display: inline-block;
-    background: #0ef;
-    color: #fff;
+    color: #0ef;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-right: 30px;
     border-radius: 50px;
     border: 2px solid #0ef;
     transition: all 0.3s ease;
-    box-shadow: 0 0 1rem deepskyblue;
+    
+    
 }
 
 .about .about-content .right a:hover {
     color: #0ef;
     background: none;
     box-shadow: 0 0 1rem deepskyblue;
+    transform: scale(1.09);
 }
 
-/*estilo de la seccion mis servicios */
 .services,
 .works {
-    background: url("images/dev.jpg") no-repeat center;
+    background: url("images/dev2.jpg") no-repeat center;
     color: #fff;
     min-height: 500px;
     background-size: cover;
     background-attachment: fixed;
-    /*background: #111; /*color de fondo de mis servicios y mi trabajo*/
 }
 
 .services .title::before,
@@ -368,31 +348,55 @@ section .title::after {
     background: #fff;
 }
 
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: stretch; /* ¡Esto es clave! */
+}
+
 .services .serv-content .card {
     width: calc(33% - 20px);
+    min-width: 280px;
+    max-width: 350px;
+    height: 400px; /* Altura fija */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
     background: #1f242d;
-    /* color de fondo de los cuadritos de mis servicios*/
     text-align: center;
     border-radius: 50px;
-    /* redondes de las esquinas de los cuadros*/
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden; /* Oculta el desbordamiento */
 }
 
 .services .serv-content .card p {
     text-align: justify;
 }
 
-.services .serv-content .card:hover {
-    background: #0ef;
-    box-shadow: 0 0 1rem deepskyblue;
-}
-
 .services .serv-content .card .box {
-    transition: all 0.3s ease;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: auto; /* Scroll vertical si el contenido es muy grande */
+    scrollbar-width: thin; /* Scrollbar delgado para Firefox */
 }
 
+
+.services .serv-content .card .box::-webkit-scrollbar {
+    width: 6px;
+}
+.services .serv-content .card .box::-webkit-scrollbar-thumb {
+    background: #0ef;
+    border-radius: 4px;
+}
 .services .serv-content .card:hover .box {
     transform: scale(1.05);
 }
@@ -413,8 +417,91 @@ section .title::after {
     margin: 10px 0 7px 0;
 }
 
-/* estilos de la seccion mis habilidades */
+.services .serv-content {
+    display: flex;
+    flex-wrap: wrap;         /* Permite que bajen si no caben */
+    gap: 24px;               /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: stretch;    /* Estira las tarjetas para igualar alturas */
+}
 
+.services .serv-content .card {
+    width: 320px;            /* Ancho fijo para cada tarjeta */
+    min-width: 280px;
+    max-width: 350px;
+    height: 400px;           /* Altura fija para todas */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    background: #1f242d;
+    text-align: center;
+    border-radius: 30px;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.services .serv-content .card .box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: nowrap;         /* Permite que bajen si no caben */
+    gap: 50px;               /* Espacio entre tarjetas */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: stretch;    /* Estira las tarjetas para igualar alturas */
+}
+
+.skills .skills-content .card {
+    width: 200px;            /* Ancho fijo para cada tarjeta */
+    min-width: 280px;
+    max-width: 350px;
+    height: 350px;           /* Altura fija para todas */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    
+    box-shadow: 0 0 1rem deepskyblue;
+    text-align: left;
+    border-radius: 30px;
+    padding: 40px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.skills .skills-content .card .box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Aumenta el tamaño de los iconos en las tarjetas de servicios */
+.skills .skills-content .card i {
+    font-size: 30px; /* Puedes ajustar este valor a tu gusto */
+    
+}
+
+.skills .skills-content .card .text {
+    color: #0ef;
+    
+}
 
 .skills .skills-content .column {
     width: calc(50% - 30px);
@@ -423,7 +510,6 @@ section .title::after {
 .skills .skills-content .left .text {
     font-size: 20px;
     color: deepskyblue;
-    /* color se subtitulo*/
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -438,7 +524,6 @@ section .title::after {
 .skills .skills-content .left p {
     text-align: justify;
     color: #0ef;
-    /* color de texto de relleno*/
 }
 
 .skills .skills-content .left a {
@@ -463,65 +548,12 @@ section .title::after {
     margin-bottom: 10px;
 }
 
-.skills .skills-content .right .info {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
     color: #0ef;
-    /* color de lenguajes y porcentaje*/
 }
-
-.skills .skills-content .right .line {
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: deepskyblue;
-}
-
-.skills-content .right .html::before {
-    width: 60%;
-}
-
-.skills-content .right .css::before {
-    width: 50%;
-}
-
-.skills-content .right .js::before {
-    width: 30%;
-}
-
-.skills-content .right .python::before {
-    width: 10%;
-}
-
-.skills-content .right .mysql::before {
-    width: 60%;
-}
-
-.skills-content .right .java::before {
-    width: 40%;
-}
-
-.skills-content .right .csharp::before {
-    width: 60%;
-}
-
-/* estilos de la seccion mi equipo */
 
 .works .carousel .card {
     background: #1f242d;
@@ -557,9 +589,7 @@ section .title::after {
 
 .works .carousel .card img {
     height: 200px;
-    /*alto del circulo donde va la imagen*/
     width: 200px;
-    /*ancho del circulo donde va la imagen*/
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid deepskyblue;
@@ -597,7 +627,6 @@ section .title::after {
 }
 
 .works .card .box a {
-    /*text-align: center;*/
     display: inline-block;
     background: #0ef;
     color: white;
@@ -623,7 +652,6 @@ section .title::after {
     transition: all 0.3s ease;
 }
 
-/* estilos de la seccion contactame */
 .contact .title::after {
     content: "";
 }
@@ -637,13 +665,11 @@ section .title::after {
     font-weight: 600;
     margin-bottom: 10px;
     color: #0ef;
-    /*color del texto PONERCE EN CONTACTO*/
 }
 
 .contact .contact-content .left p {
     text-align: justify;
     color: white;
-    /* color del texto en mis contactos*/
 }
 
 .contact .contact-content .left .icons {
@@ -670,12 +696,10 @@ section .title::after {
 .contact .contact-content .info .head {
     font-weight: 500;
     color: white;
-    /*color de name - address - email en contacto*/
 }
 
 .contact .contact-content .info .sub-title {
     color: #0ef;
-    /*color de letras en mi info en contacto*/
 }
 
 .contact .right form .button-area {
@@ -683,31 +707,9 @@ section .title::after {
     align-items: center;
 }
 
-.right form .button-area button {
-    color: #fff;
-    display: block;
-    width: 150px !important;
-    height: 150px;
-    outline: none;
-    font-size: 25px;
-    font-weight: 700;
-    border-radius: 100px;
-    cursor: pointer;
-    flex-wrap: nowrap;
-    background: deepskyblue;
-    border: 2px solid deepskyblue;
-    transition: all 0.3s ease;
-}
 
-.right form .button-area button:hover {
-    color: #0ef;
-    background: #1e90ff
-}
-
-/* estilos de la seccion pie de pagina */
 footer {
     background: #1f242d;
-    /* color de la franja de todos los derechos reservados*/
     padding: 3px 23px;
     color: #fff;
     text-align: center;
@@ -724,7 +726,6 @@ footer span a:hover {
 }
 
 
-/* inicio de consulta de medios receptivos */
 @media (max-width: 1104px) {
     .about .about-content .left img {
         height: 350px;
@@ -755,7 +756,6 @@ footer span a:hover {
         left: -100%;
         top: 0;
         background: #222;
-        /* color de fondo de menu vista celular*/
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -854,19 +854,6 @@ footer span a:hover {
         font-size: 19px;
     }
 
-    .contact .right form .fields {
-        flex-direction: column;
-    }
-
-    .contact .right form .name,
-    .contact .right form .email {
-        margin: 0;
-    }
-
-    .right form .error-box {
-        width: 150px;
-    }
-
     .scroll-up-btn {
         right: 15px;
         bottom: 15px;
@@ -877,49 +864,6 @@ footer span a:hover {
     }
 }
 
-
-.bxl-gmail {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
-    height: 9rem;
-    background: transparent;
-    border: .3rem solid #0ef;
-    border-radius: 50%;
-    font-size: 4rem;
-    color: #0ef;
-    margin: 0rem 1rem 2rem 0;
-    transition: .5s ease;
-}
-
-.bxl-gmail:hover {
-    background: #0ef;
-    color: deepskyblue;
-    box-shadow: 0 0 1rem deepskyblue;
-}
-
-.bxl-whatsapp {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 9rem;
-    height: 9rem;
-    background: transparent;
-    border: .3rem solid #0ef;
-    border-radius: 50%;
-    font-size: 4rem;
-    color: #0ef;
-    margin: 0rem 0rem 2rem 0;
-    transition: .5s ease;
-}
-
-.bxl-whatsapp:hover {
-    background: #0ef;
-    color: deepskyblue;
-    box-shadow: 0 0 1rem deepskyblue;
-}
-
 span {
     color: #0ef;
 }
@@ -927,4 +871,185 @@ span {
 .bars {
     font-size: 40px;
 
+}
+
+/* Contacto */
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  transition: background 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-links {
+  margin-top: 30px;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  background: #0cc5b6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.contact-links a:hover {
+  background: #dfd009;
+}
+
+/* Mensajes del formulario */
+.message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #28a745;
+}
+
+.error {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #dc3545;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+
+/* Responsive: apilar columnas en pantallas pequeñas */
+@media (max-width: 768px){
+  .hero .hero-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero .hero-content .left,
+  .hero .hero-content .right{
+    width: 100%;
+  }
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(10, 131, 131);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(10, 131, 131);
+  box-shadow: 0 0 1rem deepskyblue;
+  transform: scale(1.05);
+  color: white;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bx.bxl-whatsapp {
+  font-size: 55px !important; /* aumenta el tamaño */
+  color: #0ef;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left:50px;
+}
+
+.bx.bxl-whatsapp:hover {
+  transform: scale(1.5);
+}
+
+.bx.bxl-github {
+font-size: 55px !important; /* aumenta el tamaño */
+  color: #0ef;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left:50px;
+}
+
+.bx.bxl-github:hover {
+  transform: scale(1.5);
+}
+
+.bx.bxl-linkedin {
+    font-size: 55px !important; /* aumenta el tamaño */
+  color: #0ef;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left:50px;
+}
+.bx.bxl-linkedin:hover {
+  transform: scale(1.5);
+}
+
+.typed-cursor {
+    font-size: 1.5rem; /* fija un tamaño único para todos */
+    color: #0ef;       /* opcional: color del cursor */
+    line-height: 1;
 }
