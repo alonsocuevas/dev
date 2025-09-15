@@ -455,16 +455,17 @@ section .title::after {
 
 .skills .skills-content {
     display: flex;
-    flex-wrap: nowrap;         /* Permite que bajen si no caben */
+    flex-wrap: wrap;         /* Permite que bajen si no caben */
     gap: 50px;               /* Espacio entre tarjetas */
     justify-content: center; /* Centra las tarjetas horizontalmente */
     align-items: stretch;    /* Estira las tarjetas para igualar alturas */
 }
 
 .skills .skills-content .card {
-    width: 200px;            /* Ancho fijo para cada tarjeta */
+    flex: 1 1 220px;
+    width: 100px;            /* Ancho fijo para cada tarjeta */
     min-width: 280px;
-    max-width: 350px;
+    max-width: 200px;
     height: 350px;           /* Altura fija para todas */
     display: flex;
     flex-direction: column;
@@ -554,6 +555,19 @@ section .title::after {
     font-size: 18px;
     color: #0ef;
 }
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 250px; /* ancho base 250px, pero se ajusta */
+  max-width: 250px;
+}
+
 
 .works .carousel .card {
     background: #1f242d;
@@ -1053,3 +1067,5 @@ font-size: 55px !important; /* aumenta el tamaño */
     color: #0ef;       /* opcional: color del cursor */
     line-height: 1;
 }
+
+
