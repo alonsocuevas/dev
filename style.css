@@ -8,11 +8,6 @@
 
 }
 
-.typing-3, .typing-4, .typing-5, .typing-6 {
-    font-size: 30px;
-    font-weight: bold;
-}
-
 body {
     background-color: #1f242d;
 }
@@ -207,7 +202,7 @@ section .title::after {
 
 .home {
     display: flex;
-    background: url("images/dev2.jpg") no-repeat center;
+    background: url("images/dev2.webp") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -221,13 +216,13 @@ section .title::after {
     display: flex;
 }
 
-.home .home-content .text-2 {
+.home .home-content h1{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 
-.home .home-content .text-3 {
+.home .home-content h2 {
     font-size: 40px;
     margin: 5px 0;
 }
@@ -334,9 +329,14 @@ section .title::after {
     transform: scale(1.09);
 }
 
+.service h2 {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
 .services,
 .works {
-    background: url("images/dev2.jpg") no-repeat center;
+    background: url("images/dev2.webp") no-repeat center;
     color: #fff;
     min-height: 500px;
     background-size: cover;
@@ -453,6 +453,11 @@ section .title::after {
     overflow-y: auto;
 }
 
+.skills h2{
+    font-size: 30px;
+    margin: 5px 0;
+}
+
 .skills .skills-content {
     display: flex;
     flex-wrap: wrap;         /* Permite que bajen si no caben */
@@ -499,9 +504,8 @@ section .title::after {
     
 }
 
-.skills .skills-content .card .text {
+.skills .skills-content .card h3 {
     color: #0ef;
-    
 }
 
 .skills .skills-content .column {
@@ -568,6 +572,10 @@ section .title::after {
   max-width: 250px;
 }
 
+.works h2{
+    font-size: 30px;
+    margin: 5px 0;
+}
 
 .works .carousel .card {
     background: #1f242d;
@@ -664,6 +672,11 @@ section .title::after {
     border-radius: 50px;
     border: 2px solid deepskyblue;
     transition: all 0.3s ease;
+}
+
+.contact h2{
+    font-size: 30px;
+    margin: 5px 0;
 }
 
 .contact .title::after {
