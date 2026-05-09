@@ -1,66 +1,268 @@
-## Portafolio Web - Alonso Cuevas Pizarro
+# 🌐 Portafolio Web de Alonso Cuevas
 
-Bienvenido a mi portafolio web, donde muestro mis habilidades, proyectos y experiencia como desarrollador de software web. Este sitio está diseñado para resaltar mis trabajos, certificaciones y conocimientos técnicos de manera clara y profesional.
+Portafolio profesional desarrollado para presentar mi experiencia laboral, tecnologías utilizadas y proyectos personales/profesionales desplegados en distintas plataformas web.
 
-URL del sitio en vivo: https://alonsocuevas.github.io/dev/
+El sitio funciona como una vitrina digital donde los visitantes pueden explorar proyectos interactivos, revisar experiencia profesional y acceder a diferentes demostraciones desplegadas en servicios como GitHub Pages, Render y Vercel.
 
-## Tecnologías Utilizadas
+---
 
-- Lenguajes: HTML5, CSS3, JavaScript
+## 📸 Vista General
 
-- Frameworks/Librerías: React (en proyectos), Node.js, Owl Carousel, Typed.js, jQuery
+Este proyecto incluye:
 
-- Iconografía y Estilos: Boxicons, Font Awesome, Devicons
+- Presentación profesional
+- Experiencia laboral
+- Stack tecnológico
+- Carrusel de proyectos interactivos
+- Acceso a CV y certificados
+- Formulario de contacto
+- Integración con redes profesionales
 
-## Funcionalidades
+![](readme-img/porta1.png)
+![](readme-img/porta2.png)
+![](readme-img/porta3.png)
+![](readme-img/porta4.png)
 
-- Navegación fluida: Barra fija y responsive con scroll suave.
+---
 
-- Animaciones y efectos: Texto tipado, animaciones flotantes, carrusel de proyectos.
+# 🚀 Características
 
-- Sección de proyectos: Visualiza mis trabajos en detalle, algunos con demos en vivo.
+- Diseño responsive
+- Navegación suave entre secciones
+- Animaciones dinámicas con Typed.js
+- Carrusel interactivo de proyectos
+- Integración con EmailJS
+- SEO básico implementado
+- Open Graph y Twitter Cards configuradas
+- Despliegue estático optimizado para GitHub Pages
 
-- Contacto: Acceso directo a Gmail y WhatsApp para contacto rápido.
+---
 
-- Responsive: Compatible con dispositivos móviles, tablets y escritorio.
+# 🛠️ Tecnologías Utilizadas
 
-## Cómo Ejecutar Localmente
+## Frontend
 
-1. Clona el repositorio:
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+
+## Librerías y Plugins
+
+- Typed.js
+- OwlCarousel2
+- Font Awesome
+- Boxicons
+- Devicon
+- EmailJS
+- Waypoints
+
+---
+
+# 📂 Estructura del Proyecto
+
+```bash
+dev/
+├── .vscode/
+│   └── settings.json
+├── adjunto/
+├── images/
+├── titulos/
+│   ├── certificados/
+│   ├── images/
+│   ├── dev2.webp:Zone.Identifier
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── README.md
+├── adjunto.docx
+├── index.html
+├── robots.txt
+├── script.js
+├── sitemap.xml
+└── style.css
+```
+
+---
+
+# 🧠 Funcionalidades Principales
+
+## 📌 Sección Inicio
+
+Presentación principal con efecto de escritura animada y navegación rápida hacia contacto.
+
+## 👨‍💻 Sobre Mí
+
+Descripción profesional orientada al desarrollo de software web y acceso directo a:
+
+- Curriculum Vitae
+- Certificados y títulos
+
+## 💼 Experiencia Laboral
+
+Experiencia en desarrollo Full Stack trabajando en:
+
+- Sistemas empresariales
+- Plataformas de incidencias
+- Soluciones web
+- Optimización de interfaces móviles
+
+## ⚙️ Tecnologías
+
+Visualización organizada de:
+
+- Lenguajes
+- Frameworks
+- Bases de datos
+- Herramientas de desarrollo
+
+## 🧩 Proyectos
+
+Carrusel interactivo con proyectos desplegados y demostraciones funcionales.
+
+Incluye proyectos como:
+
+- CRUD Web
+- Ticket de Avión
+- Sistema Bancario
+- Juego Dino
+- Neofetch Web
+- Aplicación de Apuntes
+- Simuladores
+- Proyectos académicos
+
+## 📬 Contacto
+
+Formulario funcional conectado mediante EmailJS para recepción de mensajes sin backend.
+
+---
+
+# 🌍 Deploy
+
+Actualmente desplegado en:
+
+- GitHub Pages
+
+---
+
+# 🗄️ Base de Datos
+
+Este proyecto:
+
+- No utiliza base de datos
+- No requiere backend
+- No utiliza archivos `.env`
+
+---
+
+# 📦 Instalación y Uso
+
+Como es un proyecto estático, solo necesitas clonar el repositorio y abrir el archivo principal.
+
 ```bash
 git clone https://github.com/alonsocuevas/dev.git
 ```
 
-2. Abre index.html en tu navegador o usa Live Server en VSCode (puerto configurado en 5502).
+Luego abre:
 
-3. Disfruta navegando por el portafolio y revisa los proyectos y certificados.
+```bash
+index.html
+```
 
-## Proyectos Destacados
+También puedes usar extensiones como:
 
-- Ticket de Avión: Sistema SaaS con QR dinámico.
+- Live Server (VSCode)
 
-- Banco: Gestión de cuentas y usuarios.
+---
 
-- Termómetro: Conversor de temperaturas en Windows Forms.
+# 🔧 Configuración
 
-- Fútbol: Control de equipos y jugadores.
+No requiere:
 
-- Auto Bus: Optimización del cobro de pasajes.
+- Node.js
+- package.json
+- npm
+- yarn
+- variables de entorno
 
-- Precipitación, Telefonía, Estatura: Aplicaciones de transformación y control de datos.
+Todo funciona directamente desde archivos estáticos HTML, CSS y JavaScript.
 
-- CRUD: Ejemplo de base de datos funcional.
+---
 
-- Dino Juego: Juego interactivo estilo dinosaurio de Chrome.
+# 📈 SEO Implementado
 
-(Muchos proyectos cuentan con demos en vivo)
+El proyecto incluye:
 
-## Contacto
-- Correo: alonsocuevaspizarro@gmail.com
+- Meta etiquetas
+- Open Graph
+- Twitter Cards
+- robots.txt
+- sitemap.xml
+- Etiquetas semánticas
+- Optimización para compartir enlaces
 
-- WhatsApp: +56 9 3220 7318
+---
 
-- Ubicación: Concepción, Chile
+# 📱 Responsive Design
 
-Estoy siempre abierto a nuevas oportunidades y proyectos desafiantes. ¡Conectemos y hagamos cosas increíbles!
+El portafolio fue desarrollado para funcionar correctamente en:
 
+- Escritorio
+- Tablets
+- Dispositivos móviles
+
+---
+
+# 🔐 Integraciones Externas
+
+El proyecto consume recursos externos desde CDN:
+
+- jQuery CDN
+- Font Awesome CDN
+- OwlCarousel CDN
+- Typed.js CDN
+- EmailJS CDN
+
+---
+
+# 📄 Licencia
+
+Este proyecto fue desarrollado como portafolio personal y vitrina profesional.
+
+Uso personal y educativo.
+
+---
+
+# 👨‍💻 Autor
+
+## Alonso Cuevas Pizarro
+
+Desarrollador de Software Web enfocado en:
+
+- React
+- Node.js
+- PostgreSQL
+- Docker
+- Desarrollo Full Stack
+
+---
+
+# 🔗 Enlaces
+
+## GitHub
+
+```txt
+https://github.com/alonsocuevas
+```
+
+## LinkedIn
+
+```txt
+https://www.linkedin.com/in/alonso-cuevas-pizarro-b2066434a/
+```
+
+## Portafolio
+
+```txt
+https://alonsocuevas.github.io/dev/
+```
