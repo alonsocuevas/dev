@@ -1,7 +1,7 @@
 {
   "name": "Alonso Cuevas",
   "short_name": "Alonso",
-  "start_url": "/dev",
+  "start_url": "/dev/",
   "scope": "/dev/",
   "display": "standalone",
   "background_color": "#ffffff",
