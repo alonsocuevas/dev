@@ -9,7 +9,9 @@
 }
 
 body {
-    background-color: #1f242d;
+    /*background-color: #000816;*/
+    /*background-color: #111827;*/
+    background: linear-gradient(135deg, #060816 0%, #111827 70%, #1f2937 100%);
 }
 
 h2 {
@@ -37,7 +39,7 @@ html {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .max-width {
@@ -60,7 +62,7 @@ footer {
 .services .serv-content,
 .skills .skills-content,
 .contact .contact-content, 
-.experiencie .experience-content {
+.experience .experience-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -467,6 +469,7 @@ section .title::after {
 }
 
 .skills .skills-content .card {
+    background-color: #1f242d;
     flex: 1 1 220px;
     width: 100px;            /* Ancho fijo para cada tarjeta */
     min-width: 280px;
@@ -490,6 +493,7 @@ section .title::after {
     color: white;
 }
 .skills .skills-content .card .box {
+    background-color: #1f242d;
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
