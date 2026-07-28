@@ -786,7 +786,7 @@ footer span a:hover {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #222;
+        background: linear-gradient(135deg, #060816 0%, #111827 70%, #1f2937 100%);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
